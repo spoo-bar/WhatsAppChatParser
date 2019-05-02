@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/WhatsAppChatParser
+/WhatsAppChatParser/bin/
+/WhatsAppChatParser/obj/
+/WhatsAppChatParserLibrary/bin/
+/WhatsAppChatParserLibrary/obj/
