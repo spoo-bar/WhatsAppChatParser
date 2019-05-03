@@ -7,18 +7,28 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Spoorthi S</Authors>
     <LangVersion>7.1</LangVersion>
-    <PackageLicenseUrl>https://github.com/spoon611/WhatsAppChatParser/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl />
     <RepositoryUrl>https://github.com/spoon611/WhatsAppChatParser</RepositoryUrl>
-    <PackageTags>Whatsapp, Parser</PackageTags>
+    <PackageTags>WhatsApp, Parser</PackageTags>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Description>Parser for exported WhatsApp chats</Description>
     <Copyright>Copyright © Spoorthi S 2019</Copyright>
+    <PackageIconUrl>https://github.com/spoon611/WhatsAppChatParser/blob/master/img/logo.png</PackageIconUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReleaseNotes>Initialize release of WhatsApp chat parser</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DefineConstants />
     <DocumentationFile>C:\Code\Misc\WhatsAppChatParser\WhatsAppChatParserLibrary\WhatsAppChatParser.xml</DocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
