@@ -6,20 +6,19 @@
     <AssemblyName>WhatsAppChatParser</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Spoorthi S</Authors>
+    <LangVersion>7.1</LangVersion>
+    <PackageLicenseUrl>https://github.com/spoon611/WhatsAppChatParser/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl />
+    <RepositoryUrl>https://github.com/spoon611/WhatsAppChatParser</RepositoryUrl>
+    <PackageTags>Whatsapp, Parser</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Description>Parser for exported WhatsApp chats</Description>
+    <Copyright>Copyright © Spoorthi S 2019</Copyright>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DefineConstants />
     <DocumentationFile>C:\Code\Misc\WhatsAppChatParser\WhatsAppChatParserLibrary\WhatsAppChatParser.xml</DocumentationFile>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Reference Include="System.IO.FileSystem">
-      <HintPath>..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.netcore.app\2.1.0\ref\netcoreapp2.1\System.IO.FileSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime">
-      <HintPath>..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.netcore.app\2.1.0\ref\netcoreapp2.1\System.Runtime.dll</HintPath>
-    </Reference>
-  </ItemGroup>
 
 </Project>

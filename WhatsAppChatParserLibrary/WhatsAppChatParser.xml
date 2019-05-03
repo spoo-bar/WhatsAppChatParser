@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WhatsAppChatParser</name>
+    </assembly>
+    <members>
+        <member name="T:WhatsAppChatParserLibrary.Message">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WhatsAppChatParserLibrary.Message.TimeStamp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WhatsAppChatParserLibrary.Message.MessageBy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WhatsAppChatParserLibrary.Message.Text">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WhatsAppChatParserLibrary.WhatsAppChat">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WhatsAppChatParserLibrary.WhatsAppChat.Parse(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

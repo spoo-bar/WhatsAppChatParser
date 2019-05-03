@@ -1,18 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Text;
-using System.Threading.Tasks;
+using System.Linq;
 
 namespace WhatsAppChatParserLibrary
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class WhatsAppChat
     {
-        public static async Task<IEnumerable<Message>> ParseAsync(string filePath)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <returns></returns>
+        public static IEnumerable<Message> Parse(string filePath)
         {
             var messages = new List<Message>();
 
-            var chatLog = await File.ReadAllLinesAsync(filePath);
+            var chatLog = File.ReadAllLines(filePath);
             foreach(var chatLine in chatLog)
             {
                 var message = Message.Parse(chatLine);
