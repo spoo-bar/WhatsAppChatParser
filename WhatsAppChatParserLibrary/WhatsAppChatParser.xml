@@ -6,35 +6,35 @@
     <members>
         <member name="T:WhatsAppChatParserLibrary.Message">
             <summary>
-            
+            An individual WhatsApp message
             </summary>
         </member>
         <member name="P:WhatsAppChatParserLibrary.Message.TimeStamp">
             <summary>
-            
+            Date and Time when the message was sent
             </summary>
         </member>
         <member name="P:WhatsAppChatParserLibrary.Message.MessageBy">
             <summary>
-            
+            The contact name of the person who sent the message
             </summary>
         </member>
         <member name="P:WhatsAppChatParserLibrary.Message.Text">
             <summary>
-            
+            The message text
             </summary>
         </member>
         <member name="T:WhatsAppChatParserLibrary.WhatsAppChat">
             <summary>
-            
+            A provider to parse WhatsApp chats
             </summary>
         </member>
         <member name="M:WhatsAppChatParserLibrary.WhatsAppChat.Parse(System.String)">
             <summary>
-            
+            Parses the exported WhatsApp chat and return a list of messages
             </summary>
-            <param name="filePath"></param>
-            <returns></returns>
+            <param name="filePath">Path to the WhatsApp chat</param>
+            <returns>An enumerable of messages</returns>
         </member>
     </members>
 </doc>

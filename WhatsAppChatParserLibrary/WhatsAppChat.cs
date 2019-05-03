@@ -5,15 +5,15 @@ using System.Linq;
 namespace WhatsAppChatParserLibrary
 {
     /// <summary>
-    /// 
+    /// A provider to parse WhatsApp chats
     /// </summary>
     public static class WhatsAppChat
     {
         /// <summary>
-        /// 
+        /// Parses the exported WhatsApp chat and return a list of messages
         /// </summary>
-        /// <param name="filePath"></param>
-        /// <returns></returns>
+        /// <param name="filePath">Path to the WhatsApp chat</param>
+        /// <returns>An enumerable of messages</returns>
         public static IEnumerable<Message> Parse(string filePath)
         {
             var messages = new List<Message>();

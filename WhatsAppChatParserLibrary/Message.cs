@@ -3,22 +3,22 @@
 namespace WhatsAppChatParserLibrary
 {
     /// <summary>
-    /// 
+    /// An individual WhatsApp message
     /// </summary>
     public class Message
     {
         /// <summary>
-        /// 
+        /// Date and Time when the message was sent
         /// </summary>
         public DateTime TimeStamp { get; set; }
 
         /// <summary>
-        /// 
+        /// The contact name of the person who sent the message
         /// </summary>
         public string MessageBy { get; set; }
 
         /// <summary>
-        /// 
+        /// The message text
         /// </summary>
         public string Text { get; set; }
 

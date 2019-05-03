@@ -16,7 +16,9 @@
     <Copyright>Copyright © Spoorthi S 2019</Copyright>
     <PackageIconUrl>https://github.com/spoon611/WhatsAppChatParser/blob/master/img/logo.png</PackageIconUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageReleaseNotes>Initialize release of WhatsApp chat parser</PackageReleaseNotes>
+    <PackageReleaseNotes>- Added documentation</PackageReleaseNotes>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
