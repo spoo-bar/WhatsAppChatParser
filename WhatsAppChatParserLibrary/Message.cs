@@ -31,8 +31,8 @@ namespace WhatsAppChatParserLibrary
                 var chatString = chatLine.Replace(dateTimeString, string.Empty).Trim().Trim('-');
 
                 message.TimeStamp = GetMessageTimeStamp(dateTimeString);
-                message.MessageBy = GetMessageBy(chatString).Trim();
-                message.Text = GetMessageText(chatString, message.MessageBy).Trim();
+                message.MessageBy = GetMessageBy(chatString)?.Trim();
+                message.Text = GetMessageText(chatString, message.MessageBy)?.Trim();
             }
             else
                 message.Text = chatLine.Trim();
