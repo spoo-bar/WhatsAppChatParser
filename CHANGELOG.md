@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-* Support chats ToJSON, ToXML and ToCSV
+* Support chats ToJSON
 
 ## [1.1.0] - 2019-05-06
 

@@ -8,6 +8,8 @@ A C# parser for exported WhatsApp chat histories
 
 ## Usage
 
+### Parsing
+
 ```
 using WhatsAppChatParser;
 
@@ -27,3 +29,33 @@ static void Main(string[] args)
 }
 
 ```
+
+### Data Serialization
+
+WhatsAppChatParser exposes extension methods to serialize the chat list. 
+
+
+#### To JSON 
+JSON serialization is handled internally using Newtonsoft.Json. All the `JsonConvert.SerializeObject` overloads are supported.
+
+```
+using Newtonsoft.Json;
+using WhatsAppChatParser;
+
+static void Main(string[] args)
+{
+
+    private readonly string filePath = @"C:\..\..WhatsApp Chat with John Doe.txt";
+    var chats = WhatsAppChat.Parse(filePath);
+
+    var json = chats.ToJSON(); 
+    var indentedJson = chats.ToJSON(Formatting.Indented);
+}
+
+```
+
+## TODO
+
+- Implement ToXML
+- Implement ToCSV
+- Support exported media

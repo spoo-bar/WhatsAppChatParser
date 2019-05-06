@@ -4,6 +4,79 @@
         <name>WhatsAppChatParser</name>
     </assembly>
     <members>
+        <member name="T:WhatsAppChatParser.JSONExtensions">
+            <summary>
+            Extension method to get JSON string representation of messages
+            </summary>
+        </member>
+        <member name="M:WhatsAppChatParser.JSONExtensions.ToJSON(System.Collections.Generic.IEnumerable{WhatsAppChatParser.Message})">
+            <summary>
+            Serializes the specified object to a JSON string
+            </summary>
+            <param name="messages">Messages to serialize</param>
+            <returns>A JSON string representation of the object.</returns>
+        </member>
+        <member name="M:WhatsAppChatParser.JSONExtensions.ToJSON(System.Collections.Generic.IEnumerable{WhatsAppChatParser.Message},Newtonsoft.Json.Formatting)">
+            <summary>
+            Serializes the specified object to a JSON string using formatting.
+            </summary>
+            <param name="messages">Messages to serialize</param>
+            <param name="formatting">Indicates how the output should be formatted.</param>
+            <returns>A JSON string representation of the object.</returns>
+        </member>
+        <member name="M:WhatsAppChatParser.JSONExtensions.ToJSON(System.Collections.Generic.IEnumerable{WhatsAppChatParser.Message},Newtonsoft.Json.JsonConverter[])">
+            <summary>
+            Serializes the specified object to a JSON string using a collection of Newtonsoft.Json.JsonConverter.
+            </summary>
+            <param name="messages">Messages to serialize</param>
+            <param name="converters">A collection of converters used while serializing.</param>
+            <returns>A JSON string representation of the object.</returns>
+        </member>
+        <member name="M:WhatsAppChatParser.JSONExtensions.ToJSON(System.Collections.Generic.IEnumerable{WhatsAppChatParser.Message},Newtonsoft.Json.Formatting,Newtonsoft.Json.JsonConverter[])">
+            <summary>
+            Serializes the specified object to a JSON string using formatting and a collection of Newtonsoft.Json.JsonConverter.
+            </summary>
+            <param name="messages">Messages to serialize</param>
+            <param name="formatting">Indicates how the output should be formatted.</param>
+            <param name="converters">A collection of converters used while serializing.</param>
+            <returns>A JSON string representation of the object.</returns>
+        </member>
+        <member name="M:WhatsAppChatParser.JSONExtensions.ToJSON(System.Collections.Generic.IEnumerable{WhatsAppChatParser.Message},Newtonsoft.Json.JsonSerializerSettings)">
+            <summary>
+            Serializes the specified object to a JSON string using Newtonsoft.Json.JsonSerializerSettings.
+            </summary>
+            <param name="messages">Messages to serialize</param>
+            <param name="jsonSerializerSettings">The Newtonsoft.Json.JsonSerializerSettings used to serialize the object. If this is null, default serialization settings will be used.</param>
+            <returns>A JSON string representation of the object.</returns>
+        </member>
+        <member name="M:WhatsAppChatParser.JSONExtensions.ToJSON(System.Collections.Generic.IEnumerable{WhatsAppChatParser.Message},System.Type,Newtonsoft.Json.JsonSerializerSettings)">
+            <summary>
+            Serializes the specified object to a JSON string using a type, formatting and Newtonsoft.Json.JsonSerializerSettings.
+            </summary>
+            <param name="messages">Messages to serialize</param>
+            <param name="type">The type of the value being serialized. This parameter is used when Newtonsoft.Json.JsonSerializer.TypeNameHandling is Newtonsoft.Json.TypeNameHandling.Auto to write out the type name if the type of the value does not match. Specifying the type is optional.</param>
+            <param name="jsonSerializerSettings">The Newtonsoft.Json.JsonSerializerSettings used to serialize the object. If this is null, default serialization settings will be used.</param>
+            <returns>A JSON string representation of the object.</returns>
+        </member>
+        <member name="M:WhatsAppChatParser.JSONExtensions.ToJSON(System.Collections.Generic.IEnumerable{WhatsAppChatParser.Message},Newtonsoft.Json.Formatting,Newtonsoft.Json.JsonSerializerSettings)">
+            <summary>
+            Serializes the specified object to a JSON string using formatting and Newtonsoft.Json.JsonSerializerSettings.
+            </summary>
+            <param name="messages">Messages to serialize</param>
+            <param name="formatting">Indicates how the output should be formatted.</param>
+            <param name="jsonSerializerSettings">The Newtonsoft.Json.JsonSerializerSettings used to serialize the object. If this is null, default serialization settings will be used.</param>
+            <returns>A JSON string representation of the object.</returns>
+        </member>
+        <member name="M:WhatsAppChatParser.JSONExtensions.ToJSON(System.Collections.Generic.IEnumerable{WhatsAppChatParser.Message},System.Type,Newtonsoft.Json.Formatting,Newtonsoft.Json.JsonSerializerSettings)">
+            <summary>
+            Serializes the specified object to a JSON string using a type, formatting and Newtonsoft.Json.JsonSerializerSettings.
+            </summary>
+            <param name="messages">Messages to serialize</param>
+            <param name="type">The type of the value being serialized. This parameter is used when Newtonsoft.Json.JsonSerializer.TypeNameHandling is Newtonsoft.Json.TypeNameHandling.Auto to write out the type name if the type of the value does not match. Specifying the type is optional.</param>
+            <param name="formatting">Indicates how the output should be formatted.</param>
+            <param name="jsonSerializerSettings">The Newtonsoft.Json.JsonSerializerSettings used to serialize the object. If this is null, default serialization settings will be used.</param>
+            <returns>A JSON string representation of the object.</returns>
+        </member>
         <member name="T:WhatsAppChatParser.Message">
             <summary>
             An individual WhatsApp message
