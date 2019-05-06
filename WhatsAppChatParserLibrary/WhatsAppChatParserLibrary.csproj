@@ -14,11 +14,11 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Description>Parser for exported WhatsApp chats</Description>
     <Copyright>Copyright © Spoorthi S 2019</Copyright>
-    <PackageIconUrl>https://github.com/spoon611/WhatsAppChatParser/blob/master/img/logo.png</PackageIconUrl>
+    <PackageIconUrl>..\img\logo.png</PackageIconUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageReleaseNotes>- Added documentation</PackageReleaseNotes>
-    <Version>1.0.1</Version>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <PackageReleaseNotes>- Added support to read from stream</PackageReleaseNotes>
+    <Version>1.1.0</Version>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

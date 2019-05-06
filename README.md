@@ -13,7 +13,14 @@ using WhatsAppChatParserLibrary;
 
 static void Main(string[] args)
 {
-    IEnumerable<Message> chats = WhatsAppChat.Parse("WhatsApp Chat with John Doe.txt");
+
+    private readonly string filePath = @"C:\..\..WhatsApp Chat with John Doe.txt";
+
+    // Read from file path
+    IEnumerable<Message> chats = WhatsAppChat.Parse(filePath);
+
+    // Read from stream
+    chats = WhatsAppChat.Parse(new FileStream(filePath, FileMode.Open));
 
     foreach(var chat in chats)
         Console.WriteLine($"{chat.MessageBy} said {chat.Text} at {chat.TimeStamp}");
