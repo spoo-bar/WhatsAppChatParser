@@ -7,3 +7,5 @@
 /WhatsAppChatParser/obj/
 /WhatsAppChatParserLibrary/bin/
 /WhatsAppChatParserLibrary/obj/
+/WhatsAppChatParserLibrary.Tests/bin/Debug/netcoreapp2.1
+/WhatsAppChatParserLibrary.Tests/obj

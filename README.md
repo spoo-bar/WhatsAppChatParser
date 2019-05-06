@@ -9,7 +9,7 @@ A C# parser for exported WhatsApp chat histories
 ## Usage
 
 ```
-using WhatsAppChatParserLibrary;
+using WhatsAppChatParser;
 
 static void Main(string[] args)
 {

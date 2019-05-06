@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
-namespace WhatsAppChatParserLibrary
+[assembly: InternalsVisibleTo("WhatsAppChatParser.Tests")]
+namespace WhatsAppChatParser
 {
     /// <summary>
     /// An individual WhatsApp message
@@ -13,7 +15,7 @@ namespace WhatsAppChatParserLibrary
         public DateTime TimeStamp { get; set; }
 
         /// <summary>
-        /// The contact name of the person who sent the message
+        /// The contact name of the person who sent the message (Will be null when its a WhatsApp message)
         /// </summary>
         public string MessageBy { get; set; }
 

@@ -16,9 +16,9 @@
     <Copyright>Copyright © Spoorthi S 2019</Copyright>
     <PackageIconUrl>..\img\logo.png</PackageIconUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageReleaseNotes>- Added support to read from stream</PackageReleaseNotes>
-    <Version>1.1.0</Version>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <PackageReleaseNotes>- Namespace changes</PackageReleaseNotes>
+    <Version>2.0.0</Version>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

@@ -2,7 +2,7 @@
 using System.IO;
 using System.Linq;
 
-namespace WhatsAppChatParserLibrary
+namespace WhatsAppChatParser
 {
     /// <summary>
     /// A provider to parse WhatsApp chats
