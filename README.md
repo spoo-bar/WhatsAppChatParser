@@ -2,7 +2,7 @@
 
 A C# parser for exported WhatsApp chat histories
 
-![Nuget](https://img.shields.io/nuget/v/WhatsAppChatParser.svg?style=for-the-badge) 
+[![Nuget Version](https://img.shields.io/nuget/v/WhatsAppChatParser.svg?style=for-the-badge)](https://www.nuget.org/packages/WhatsAppChatParser/)  [![Nuget](https://img.shields.io/nuget/dt/WhatsAppChatParser.svg?color=9cf&style=for-the-badge)](https://www.nuget.org/packages/WhatsAppChatParser/)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/spoon611/WhatsAppChatParser.svg?color=red&style=for-the-badge) ![GitHub Release Date](https://img.shields.io/github/release-date/spoon611/WhatsAppChatParser.svg?style=for-the-badge)  ![GitHub](https://img.shields.io/github/license/spoon611/WhatsAppChatParser.svg?style=for-the-badge)
 
