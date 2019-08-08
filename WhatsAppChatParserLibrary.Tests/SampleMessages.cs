@@ -10,5 +10,7 @@
         internal const string VALID_MESSAGE_WITH_SMILEY = "28/08/18, 8:55 am - John Doe: His back story :P";
         internal const string VALID_MESSAGE_WITH_COMMA = "28/08/18, 9:17 am - John Doe: Also, please check online if this idea isn't taken already";
         internal const string VALID_MESSAGE_WITH_HYPHEN = "28/08/18, 9:17 am - John Doe: Also- please check online if this idea isn't taken already";
+        internal const string VALID_MESSAGE_WITH_US_CULTURE = "08/25/18, 5:29 pm - John Doe: This doesn't count";
+        internal const string VALID_MESSAGE_WITH_NORWEGIAN_CULTURE = "25.08.18, 5:29 pm - John Doe: This doesn't count";
     }
 }

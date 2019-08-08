@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("WhatsAppChatParser.Tests")]
@@ -24,7 +25,7 @@ namespace WhatsAppChatParser
         /// </summary>
         public string Text { get; set; }
 
-        internal static Message Parse(string chatLine)
+        internal static Message Parse(string chatLine, CultureInfo culture)
         {
             var message = new Message();
             if(chatLine.Split(new string[] { " - " }, StringSplitOptions.RemoveEmptyEntries).Length >= 2)
@@ -32,7 +33,7 @@ namespace WhatsAppChatParser
                 var dateTimeString = chatLine.Split(new string[] { " - " }, StringSplitOptions.RemoveEmptyEntries)[0].Trim();
                 var chatString = chatLine.Replace(dateTimeString, string.Empty).Trim().Trim('-');
 
-                message.TimeStamp = GetMessageTimeStamp(dateTimeString);
+                message.TimeStamp = GetMessageTimeStamp(dateTimeString, culture);
                 message.MessageBy = GetMessageBy(chatString)?.Trim();
                 message.Text = GetMessageText(chatString, message.MessageBy)?.Trim();
             }
@@ -68,13 +69,13 @@ namespace WhatsAppChatParser
             return messageBy;
         }
 
-        private static DateTime GetMessageTimeStamp(string dateTimeString)
+        private static DateTime GetMessageTimeStamp(string dateTimeString, CultureInfo culture)
         {
             var timeStamp = default(DateTime);
 
             if(!string.IsNullOrEmpty(dateTimeString))
             {
-                timeStamp = DateTime.Parse(dateTimeString);
+                DateTime.TryParse(dateTimeString, culture, DateTimeStyles.None, out timeStamp);
             }
 
             return timeStamp;

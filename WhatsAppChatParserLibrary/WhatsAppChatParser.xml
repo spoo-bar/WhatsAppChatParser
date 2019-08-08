@@ -102,6 +102,22 @@
             A provider to parse WhatsApp chats
             </summary>
         </member>
+        <member name="M:WhatsAppChatParser.WhatsAppChat.Parse(System.String,System.Globalization.CultureInfo)">
+            <summary>
+            Parses the exported WhatsApp chat and return a list of messages
+            </summary>
+            <param name="filePath">Path to the WhatsApp chat</param>
+            <param name="culture">The culture to parse the timestamp in the chat</param>
+            <returns>An enumerable of messages</returns>
+        </member>
+        <member name="M:WhatsAppChatParser.WhatsAppChat.Parse(System.IO.Stream,System.Globalization.CultureInfo)">
+            <summary>
+            Parses the exported WhatsApp chat stream and return a list of messages
+            </summary>
+            <param name="fileStream">Stream of the chat file</param>
+            <param name="culture">The culture to parse the timestamp in the chat</param>
+            <returns>An enumerable of messages</returns>
+        </member>
         <member name="M:WhatsAppChatParser.WhatsAppChat.Parse(System.String)">
             <summary>
             Parses the exported WhatsApp chat and return a list of messages

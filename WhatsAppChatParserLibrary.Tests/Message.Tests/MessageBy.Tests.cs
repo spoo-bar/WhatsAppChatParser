@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Globalization;
 
 namespace WhatsAppChatParser.Tests
 {
@@ -11,7 +12,7 @@ namespace WhatsAppChatParser.Tests
             var validMessage = TestMessages.VALID_MESSAGE;
             var expectedMessageBy = "John Doe";
 
-            var chatMessage = Message.Parse(validMessage);
+            var chatMessage = Message.Parse(validMessage, TestCultures.INDIAN_CULTURE);
 
             Assert.AreEqual(chatMessage.MessageBy, expectedMessageBy);
         }
@@ -22,7 +23,7 @@ namespace WhatsAppChatParser.Tests
             var whatsappMessage = TestMessages.WHATSAPP_MESSAGE;
             string expectedMessageBy = null;
 
-            var chatMessage = Message.Parse(whatsappMessage);
+            var chatMessage = Message.Parse(whatsappMessage, TestCultures.INDIAN_CULTURE);
 
             Assert.AreEqual(chatMessage.MessageBy, expectedMessageBy);
         }
@@ -32,7 +33,7 @@ namespace WhatsAppChatParser.Tests
         {
             var validMessage = TestMessages.VALID_MESSAGE_ON_NEW_LINE;
 
-            var chatMessage = Message.Parse(validMessage);
+            var chatMessage = Message.Parse(validMessage, TestCultures.INDIAN_CULTURE);
 
             Assert.AreEqual(chatMessage.MessageBy, null);
         }
@@ -43,7 +44,7 @@ namespace WhatsAppChatParser.Tests
             var validMessage = TestMessages.VALID_MESSAGE_WITH_URL;
             var expectedMessageBy = "John Doe";
 
-            var chatMessage = Message.Parse(validMessage);
+            var chatMessage = Message.Parse(validMessage, TestCultures.INDIAN_CULTURE);
 
             Assert.AreEqual(chatMessage.MessageBy, expectedMessageBy);
         }
@@ -54,7 +55,7 @@ namespace WhatsAppChatParser.Tests
             var validMessage = TestMessages.VALID_MESSAGE_WITH_SMILEY;
             var expectedMessageBy = "John Doe";
 
-            var chatMessage = Message.Parse(validMessage);
+            var chatMessage = Message.Parse(validMessage, TestCultures.INDIAN_CULTURE);
 
             Assert.AreEqual(chatMessage.MessageBy, expectedMessageBy);
         }        
@@ -65,7 +66,7 @@ namespace WhatsAppChatParser.Tests
             var validMessage = TestMessages.VALID_MESSAGE_WITH_HYPHEN;
             var expectedMessageBy = "John Doe";
 
-            var chatMessage = Message.Parse(validMessage);
+            var chatMessage = Message.Parse(validMessage, TestCultures.INDIAN_CULTURE);
 
             Assert.AreEqual(chatMessage.MessageBy, expectedMessageBy);
         }
