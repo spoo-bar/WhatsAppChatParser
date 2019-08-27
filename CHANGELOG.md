@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Support to parse date by specifying culture
+- Support chats ToXML
 
 ## [2.0.0] - 2019-05-07
 

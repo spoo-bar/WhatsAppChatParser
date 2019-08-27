@@ -77,6 +77,18 @@
             <param name="jsonSerializerSettings">The Newtonsoft.Json.JsonSerializerSettings used to serialize the object. If this is null, default serialization settings will be used.</param>
             <returns>A JSON string representation of the object.</returns>
         </member>
+        <member name="T:WhatsAppChatParser.XMLExtensions">
+            <summary>
+            Extension method to get XML string representation of messages
+            </summary>
+        </member>
+        <member name="M:WhatsAppChatParser.XMLExtensions.ToXML(System.Collections.Generic.IEnumerable{WhatsAppChatParser.Message})">
+            <summary>
+            Serializes the specified object to a XML string
+            </summary>
+            <param name="messages">Messages to serialize</param>
+            <returns>A XML string representation of the object.</returns>
+        </member>
         <member name="T:WhatsAppChatParser.Message">
             <summary>
             An individual WhatsApp message

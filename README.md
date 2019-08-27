@@ -54,8 +54,25 @@ static void Main(string[] args)
 
 ```
 
+#### To XML 
+XML serialization is handled internally using System.Xml.Serialization.XmlSerializer.
+
+```
+using Newtonsoft.Json;
+using WhatsAppChatParser;
+
+static void Main(string[] args)
+{
+
+    private readonly string filePath = @"C:\..\..WhatsApp Chat with John Doe.txt";
+    var chats = WhatsAppChat.Parse(filePath);
+
+    var xml = chats.ToXML(); 
+}
+
+```
+
 ## TODO
 
-- Implement ToXML
 - Implement ToCSV
 - Support exported media
