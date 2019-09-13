@@ -58,7 +58,6 @@ static void Main(string[] args)
 XML serialization is handled internally using System.Xml.Serialization.XmlSerializer.
 
 ```
-using Newtonsoft.Json;
 using WhatsAppChatParser;
 
 static void Main(string[] args)
